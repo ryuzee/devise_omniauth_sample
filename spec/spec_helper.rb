@@ -1,5 +1,5 @@
 require 'simplecov'
-require 'factory_girl'
+require 'factory_bot'
 
 SimpleCov.start 'rails'
 
@@ -13,7 +13,7 @@ RSpec.configure do |config|
   end
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation
