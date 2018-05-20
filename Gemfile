@@ -13,7 +13,7 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+# gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -45,8 +45,8 @@ gem 'dotenv-rails'
 gem 'therubyracer'
 gem 'sprockets'
 gem 'less-rails'
-gem 'twitter-bootstrap-rails', '~> 4.0'
-gem 'bootstrap_form'
+# gem 'twitter-bootstrap-rails', '~> 4.0'
+# gem 'bootstrap_form'
 gem 'activerecord-session_store'
 
 group :development, :test do

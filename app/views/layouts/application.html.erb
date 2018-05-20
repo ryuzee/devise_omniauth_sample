@@ -81,7 +81,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9">
-          <%= bootstrap_flash %>
+          <% flash.each do |key, value| %>
+          <% key = 'info' if key == 'notice' %>
+          <% key = 'danger' if key == 'alert' %>
+          <div class="alert alert-<%= key %>">
+            <%= value %>
+          </div>
+          <% end %>
           <%= yield %>
         </div>
         <div class="col-lg-3">
