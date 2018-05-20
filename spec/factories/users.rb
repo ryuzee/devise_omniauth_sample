@@ -28,7 +28,7 @@
 #  username               :string(255)      not null
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :facebook_user, class: User do
     uid 10000
     provider 'facebook'
