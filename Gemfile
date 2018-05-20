@@ -7,13 +7,13 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -43,9 +43,9 @@ gem 'omniauth-twitter'
 gem 'dotenv-rails'
 
 gem 'therubyracer'
-gem 'sprockets', '3.6.3'
-gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'twitter-bootstrap-rails'
+gem 'sprockets'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails', '~> 4.0'
 gem 'bootstrap_form'
 gem 'activerecord-session_store'
 
@@ -55,8 +55,8 @@ group :development, :test do
   gem 'rspec', '~> 3'
   gem 'rspec-rails'
   gem 'codeclimate-test-reporter'
-  gem 'factory_girl'
-  gem 'factory_girl_rails'
+  gem 'factory_bot'
+  gem 'factory_bot_rails'
   gem 'rspec_junit_formatter'
   gem 'shoulda-matchers', require: false
   gem 'simplecov'
