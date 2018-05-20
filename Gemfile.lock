@@ -71,7 +71,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     database_cleaner (1.7.0)
@@ -111,13 +110,6 @@ GEM
       thor (>= 0.14, < 2.0)
     json (2.1.0)
     jwt (1.5.6)
-    less (2.6.0)
-      commonjs (~> 0.2.7)
-    less-rails (2.8.0)
-      actionpack (>= 4.0)
-      less (~> 2.6.0)
-      sprockets (> 2, < 4)
-      tilt
     libv8 (3.16.14.19)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -247,7 +239,6 @@ GEM
       ref
     thor (0.20.0)
     thread_safe (0.3.6)
-    tilt (2.0.8)
     turbolinks (5.1.1)
       turbolinks-source (~> 5.1)
     turbolinks-source (5.1.0)
@@ -284,7 +275,6 @@ DEPENDENCIES
   factory_bot_rails
   jbuilder (~> 2.5)
   jquery-rails
-  less-rails
   listen (~> 3.0.5)
   omniauth
   omniauth-facebook
