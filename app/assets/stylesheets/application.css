@@ -10,7 +10,22 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+
+ *= require bootstrap3/dist/css/bootstrap.min
  *= require sticky-footer
+ *= require_tree .
  *= require_self
  */
+
+#error_explanation {
+  color: #000;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors input {
+  background-color: #fcc;
+  border: 1px solid red;
+}

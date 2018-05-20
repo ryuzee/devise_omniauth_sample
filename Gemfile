@@ -45,8 +45,8 @@ gem 'dotenv-rails'
 gem 'therubyracer'
 gem 'sprockets'
 gem 'less-rails'
-gem 'twitter-bootstrap-rails', '~> 4.0'
-gem 'bootstrap_form'
+# gem 'twitter-bootstrap-rails', '~> 4.0'
+# gem 'bootstrap_form'
 gem 'activerecord-session_store'
 
 group :development, :test do

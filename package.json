@@ -1,0 +1,11 @@
+{
+  "name": "devise_omniauth_sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ryuzee/devise_omniauth_sample.git",
+  "author": "Ryutaro YOSHIBA <ryuzee@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap3": "^3.3.5"
+  }
+}
