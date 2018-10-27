@@ -7,6 +7,7 @@ end
 
 gem 'activerecord-session_store'
 gem 'devise'
+gem 'devise-security'
 gem 'dotenv-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
