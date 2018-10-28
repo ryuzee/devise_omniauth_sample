@@ -7,10 +7,19 @@ class User < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :display_name, presence: true, length: { maximum: 50 }
   validates :biography, presence: true, length: { maximum: 1024 }
+  validate :password_complexity
 
   def password_required?
     # super && provider.blank?
     provider.blank?
+  end
+
+  # パスワードの検証ルールを複雑なものに変更する例
+  def password_complexity
+    # Regexp extracted from https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
+    return if password.blank? || password =~ /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,70}$/
+
+    errors.add :password, 'Complexity requirement not met. Length should be 8-70 characters and include: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
   end
 
   def self.new_with_session(params, session)
